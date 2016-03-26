@@ -1,0 +1,12 @@
+{
+    "name": "deadlock/ue-php-sdk-example",
+    "authors": [
+        {
+            "name": "Hossam Saraya",
+            "email": "hossam.saraya@gmail.com"
+        }
+    ],
+    "require": {
+        "unificationengine/ue-php-sdk": "^1.5"
+    }
+}
