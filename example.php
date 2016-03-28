@@ -22,7 +22,7 @@ $connection = $user->add_connection( "fbclient", "facebook", "CAAFWfTMoGxoBACZAy
 $options = array(
     "receivers" => array(
         array(
-            "name" => "me"
+            "name" => "Me"
         ),
         array(
             "name" => "Page",
