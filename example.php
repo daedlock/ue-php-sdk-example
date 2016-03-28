@@ -6,8 +6,11 @@ use UnificationEngine\Models\UEApp;
 use UnificationEngine\Models\UEUser;
 
 
+//Initialize a UE Application
+$app = new UEApp("APP_KEY","APP_SECRET");
+
 //Initialize the user using existing user key and secret
-$user = new UEUser("5577fb51-c324-48df-8ff5-9aa3d57302e5","20d3d529-9ee5-4209-a74c-62f9d541a084");
+$user = new UEUser("USER_KEY","USER_SECRET");
 
 
 //Creating new user
@@ -15,7 +18,7 @@ $user = $app->create_user();
 
 
 //Adding connection with facebook access token
-$connection = $user->add_connection( "fbclient", "facebook", "CAAFWfTMoGxoBACZAylom0biZAiDe8L5T2scWWxItQwObFCP4jWcEGH1yPVJNJZCSarVzQyudwZBZAZC1qoZC5k2TXRuQw4jwHRZAX7MjIp4h3zcv1HaC46vOnUd2REzXzLs8hGiX27zjMQGq0ZCOk7zKu86W0ePz4OXzLbQF7uSF9uFQyv3RBl16FiIRdelDePFoZD" );
+$connection = $user->add_connection( "CONNECTION_NAME", "CONNECTOR_SCHEME (eg: facebook)", "SERVICE_ACCESS_TOKEN" );
 
 
 //Specifying message options
@@ -26,7 +29,7 @@ $options = array(
         ),
         array(
             "name" => "Page",
-            "id" => "1408579442748982"
+            "id" => "PAGE_ID_HERE"
         )
     ),
     "message" => array(
